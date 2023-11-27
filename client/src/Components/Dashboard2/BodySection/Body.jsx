@@ -76,7 +76,7 @@ const Body = () => {
     <>
       <div className="form-container">
         <div className="header">
-          <h1>Get Recommend your Most suitable mobile phone</h1>
+          <h1>Get Recommend Your Most Suitable Mobile Phone</h1>
         </div>
         {/* <h2>Input Your Details</h2> */}
         <div className="content">
