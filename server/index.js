@@ -9,7 +9,7 @@ const FoodModel =require("./models/Food")
 app.use(express.json());
 app.use(cors(
   {
-    origin:["https://deploy-mern-1whq.vercel.app"],
+    origin:["https://full-front-tau.vercel.app"],
     methods:["POST","GET"],
     credentials:true
   }
