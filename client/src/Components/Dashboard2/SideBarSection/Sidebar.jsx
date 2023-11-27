@@ -7,6 +7,7 @@ import { BsTrophy, BsCreditCard2Front, BsQuestionCircle } from 'react-icons/bs'
 import { AiOutlinePieChart } from 'react-icons/ai'
 import { BiTrendingUp, BiLogOutCircle } from 'react-icons/bi'
 import { Link } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 import  { useState } from 'react';
 import { useLocation } from 'react-router-dom'; // Assuming you're using React Router
 
@@ -46,14 +47,22 @@ const Sidebar = () => {
         <ul className="menuLists grid">
 
           <li className="listItem">
-            <a href="#"  className="menuLink flex"   onClick={handleDashboardClick} >
+            {/* <a href="#"  className="menuLink flex"   onClick={handleDashboardClick} >
               <IoMdSpeedometer className="icon" />
               <span className="smallText">
                 Dashboard
               </span>
-            </a>
+            </a> */}
+
+            <NavLink to="/dashboard" className="menuLink flex" activeClassName="active">
+    <MdDeliveryDining className="icon" />
+    <span className="smallText">Dashboard</span>
+  </NavLink>
+
           </li>
 
+
+       
           <li className= {`listItem menuLink flex ${isActive ? 'active-tab' : ''}`}>
             <a href="#"    className=  {`menuLink flex ${isActive ? 'active' : ''}`} >
               <MdDeliveryDining className="icon" />
