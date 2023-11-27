@@ -12,9 +12,8 @@ import { BsTrophy, BsCreditCard2Front, BsQuestionCircle } from "react-icons/bs";
 import { AiOutlinePieChart } from "react-icons/ai";
 import { BiTrendingUp, BiLogOutCircle } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
-import  { useState } from 'react';
+import { useState } from "react";
 const Sidebar = () => {
-
   const [isActive, setIsActive] = useState(true);
 
   const handleDashboardClick = () => {
@@ -37,30 +36,39 @@ const Sidebar = () => {
         <h3 className="divTitle">QUICK MENU</h3>
         <ul className="menuLists grid">
           <li className="listItem">
-            <a href="#"   className=  {`menuLink flex ${isActive ? 'active' : ''}`}>
+            <a href="#" className={`menuLink flex ${isActive ? "active" : ""}`}>
               <IoMdSpeedometer className="icon" />
               <span className="smallText activeLink">Dashboard</span>
             </a>
 
             <NavLink
-                  to={'/recommendation'}
-                  // onClick={toggleMenu}
-                  // className={ }
-                >
-                  <img src= "" alt="" className="micon" />
-                  {/* <span className="mtext">My Matches</span> */}
-                </NavLink>
+              to={"/recommendation"}
+              // onClick={toggleMenu}
+              // className={ }
+            >
+              <img src="" alt="" className="micon" />
+              {/* <span className="mtext">My Matches</span> */}
+            </NavLink>
           </li>
 
           <li className="listItem">
-            <a
+            {/* <a
               href="#"
               className="menuLink flex"
               onClick={handleDashboardClick}
-            >
-              <MdDeliveryDining className="icon" />
-              <span className="smallText">My Selection</span>
-            </a>
+            > */}
+              {/* <Link to="/recommendation" className="menuLink flex">
+                <MdDeliveryDining className="icon" />
+                <span className="smallText">My Selection</span>
+              </Link> */}
+              {/* <MdDeliveryDining className="icon" />
+              <span className="smallText">My Selection</span> */}
+            {/* </a> */}
+
+            <NavLink to="/recommendation" className="menuLink flex" activeClassName="active">
+    <MdDeliveryDining className="icon" />
+    <span className="smallText">My Selection</span>
+  </NavLink>
           </li>
 
           <li className="listItem">
