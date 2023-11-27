@@ -137,7 +137,7 @@ console.log('inside handle submit');
     console.log(registrationData.userName);
     console.log(registrationData.password);
     // e.preventDefault();
-    Axios.post("http://localhost:3002/register", {
+    Axios.post("https://full-omega.vercel.app/register", {
       Email: registrationData.email,
       UserName:registrationData.userName,
       Password:registrationData.password,
