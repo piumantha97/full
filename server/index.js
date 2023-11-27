@@ -31,7 +31,7 @@ console.log(' connected to the data base');
 app.get("/",
 (req,res) =>{
   res.json("Hellow")
-}
+})
 
 app.post("/register", async(req, res) => {
   console.log('inside register api');
