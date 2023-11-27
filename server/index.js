@@ -7,7 +7,13 @@ const app = express();
 const FoodModel =require("./models/Food")
 // const mysql = require('mysql');
 app.use(express.json());
-app.use(cors())
+app.use(cors(
+  {
+    origin:["https://full-front-tau.vercel.app"],
+    methods:["POST","GET"],
+    credentials:true
+  }
+))
 
 // mongoose.connect("mongodb://localhost:27017/fyp", {
 //   useNewUrlParser: true,
@@ -22,8 +28,10 @@ console.log(' connected to the data base');
 }).catch((e)=>{
     console.log('Error :',e);
 });
-
-
+app.get("/",
+(req,res) =>{
+  res.json("Hellow")
+})
 
 app.post("/register", async(req, res) => {
   console.log('inside register api');

@@ -18,7 +18,7 @@ const Login = () => {
 
   const loginUser = (e) => {
     e.preventDefault();
-    Axios.post("http://localhost:3002/login", {
+    Axios.post("https://full-omega.vercel.app/login", {
       LoginUserName: loginUserName,
       LoginPassword: loginPassword,
     }).then((response) => {
