@@ -7,7 +7,13 @@ const app = express();
 const FoodModel =require("./models/Food")
 // const mysql = require('mysql');
 app.use(express.json());
-app.use(cors())
+app.use(cors(
+  {
+    origin:["https://deploy-mern-1whq.vercel.app"],
+    methods:["POST","GET"],
+    credentials:true
+  }
+))
 
 // mongoose.connect("mongodb://localhost:27017/fyp", {
 //   useNewUrlParser: true,
