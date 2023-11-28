@@ -36,8 +36,8 @@ const Sidebar = () => {
     <div className='sideBar grid'>
 
       <div className="logoDiv flex">
-        <img src={logo} alt="Logo" />
-        <h2>Mobile</h2>
+        {/* <img src={logo} alt="Logo" /> */}
+        <h2>Smartphone Recommender</h2>
       </div>
 
       <div className="menuDiv">
