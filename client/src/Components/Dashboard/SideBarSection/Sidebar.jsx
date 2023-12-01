@@ -74,7 +74,7 @@ const Sidebar = () => {
           <li className="listItem">
             <a href="#" className="menuLink flex">
               <MdOutlineExplore className="icon" />
-              <span className="smallText">Explore</span>
+              <span className="smallText">Support</span>
             </a>
           </li>
 
