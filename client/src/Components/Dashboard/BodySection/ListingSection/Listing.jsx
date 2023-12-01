@@ -72,7 +72,7 @@ const Listing = () => {
             </div>
             <div className="cardText">
               <span>
-                14.556 Plant sold <br />
+                14.556 Phones sold <br />
                 <small>
                   21 Sellers <span className="date">7 Days</span>
                 </small>
@@ -98,7 +98,7 @@ const Listing = () => {
             </div>
             <div className="cardText">
               <span>
-                28,556 Plant sold <br />
+                28,556 Phones sold <br />
                 <small>
                   26 Sellers <span className="date">31 Days</span>
                 </small>
